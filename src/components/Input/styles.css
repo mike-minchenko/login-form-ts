@@ -1,0 +1,46 @@
+.input {
+	position: relative;
+	border-bottom: 1px solid #9b9b9b;
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	transition: border-color 0.3s;
+}
+
+.input:focus-within {
+	border-color: #c8c8c8;
+}
+
+.input .icon {
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.input .input__wrapper {
+	flex: 1;
+}
+.input label {
+	display: block;
+	font-weight: 600;
+	color: #e0e0e0;
+	padding-left: 10px;
+}
+
+.input input {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background: transparent;
+	color: white;
+	font-size: 16px;
+	outline: none;
+}
+
+.input input::placeholder {
+	color: white;
+	opacity: 0.7;
+}
+
+.input.invalid input {
+	border-color: tomato;
+}
